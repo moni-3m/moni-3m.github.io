@@ -18,36 +18,66 @@
               margin-right: auto;
             }
             </style>
+        
+        <link rel="stylesheet" href="css\intro.css">
+
     </head>
     <body>
-        <a href="section1">Education</a>
-        <a href=#section2">Interests</a>
-        <a href="#section3">Take a look</a>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#Edu">Education</a></li>
+                    <li><a href="#Int">Interests</a></li>
+                    <li><a href="#Look">Take a Look</a></li>
+                </ul>
+            </nav>
+        </div>
 
-        <h1 style="color:orange;text-align: center; background-color: bisque;">My website :)</h1>
-        <p style="color:rgb(168, 76, 0); font: size 10px; text-align: center;"><i> Welcome! </i></p>
+        <div>
+            <h1 style="font-size:73px; color:orange;text-align: center; background-color: bisque;">My website :)</h1>
+            <p style="color:rgb(168, 76, 0); font: size 10px; text-align: center;"><i> Welcome! </i></p>
+            
+            <figure>
+                <a href="statistics.html">
+                <img src="images\moni.jpg" alt="Avatar" style="width: 200px" class="center">
+                </a>
+            </figure>
+        </div>
 
-        <img src="images\moni.jpg" alt="Avatar" style="width: 200px" class="center">
+        <div>
+            <h2 style="color: rgba(83, 202, 67, 0.699);text-align: right; background-color: white;">About me</h2>
+            <p style="text-align: left;">Hello! My name is Monica, I'm from Mexico, currently living in Worcester completing my masters studies. I hope to contribute to conservation projects for naatural resoruces and biodiversity protection. </p>
+            <h2 id="Edu"> Education </h2>
+    
+            <p> <img src="images\uag.png"style="float:right;width: 75px;height:75px;" class="right"> I completed my undergraduate studies in my home country Mexico at the Universidad Autonoma de Guadalajara in Environmental Engenineering<br>Sep 2021</p>
+            <p> <img src="images\clark.jpg"style="float:right;width: 75px;height:75px;"> I am currently a GIS masters student at Clark University. <br> This is a private research university in Worcester, Massachusetts. <br> Founded in 1887 with a large endowment from its namesake Jonas Gilman Clark, a prominent businessman, Clark was one of the first modern research universities in the United States. </p>
+        </div>
+       
+        <div>
+            <h2 id="Int" style="color: rgb(135, 175, 248); background-color: rgb(190,218,243);"> Interests </h2>
+            <p> During my undergraduate studies I was part of a soil quality project research project for Tequila quality and have helped mapping new species observation in Jalisco, Mexico. <br><br> I am very interested in water quality and management as well. For now, I'd like to be part of project for conservation and/or restoration of natural resources and biodiversity. </p>
+            <p> Outside my academic interests I am a very big fan of sports and horse riding in particular. I've been riding my whole life and horse training is now a big part of my life. </p>    
+        </div>
+       
+        <div class = Hyperlink> 
+            <h2 id="Look" style="color: rgb(135, 175, 248); background-color: rgb(190, 218, 243);">Take a look</h2>
+            <p>This image will take you to my portfolio, feel free to check that out</p>
+           <figure>
+            <a href="https://m0n73m.wixsite.com/my-site"><img src="images\portfolio.png" alt="portfolio"></a>
+            <figcaption style="text-align: center;">Coverpage of my portfolio website</figcaption>
+           </figure>
+        </div>
 
-        <h2 style="color: rgba(83, 202, 67, 0.699);text-align: right;">About me</h2>
-        <p style="text-align: left;">Hello! My name is Monica, I'm from Mexico, currently living in Worcester completing my masters studies. I hope to contribute to conservation projects for naatural resoruces and biodiversity protection. </p>
-        <h2 id="section1" style="color: rgb(135, 175, 248); background-color: rgb(190, 218, 243);"> Education </h2>
-
-        <p> <img src="images\uag.png"style="float:right;width: 75px;height:75px;" class="right"> I completed my undergraduate studies in my home country Mexico at the Universidad Autonoma de Guadalajara in Environmental Engenineering<br>Sep 2021</p>
-        <p> <img src="images\clark.jpg"style="float:right;width: 75px;height:75px;"> I am currently a GIS masters student at Clark University. <br> This is a private research university in Worcester, Massachusetts. <br> Founded in 1887 with a large endowment from its namesake Jonas Gilman Clark, a prominent businessman, Clark was one of the first modern research universities in the United States. </p>
-
-        <h2 id="section2" style="color: rgb(135, 175, 248); background-color: rgb(190,218,243);"> Interests </h2>
-        <p> During my undergraduate studies I was part of a soil quality project research project for Tequila quality and have helped mapping new species observation in Jalisco, Mexico. <br><br> I am very interested in water quality and management as well. For now, I'd like to be part of project for conservation and/or restoration of natural resources and biodiversity. </p>
-        <p> Outside my academic interests I am a very big fan of sports and horse riding in particular. I've been riding my whole life and horse training is now a big part of my life. </p>
-
-        <h2 id="section3" style="color: rgb(135, 175, 248); background-color: rgb(190, 218, 243);">Take a look</h2>
-        <p>This image will take you to my portfolio, feel free to check that out</p>
-        <a href="https://m0n73m.wixsite.com/my-site"><img src="images\portfolio.png" alt="portfolio"></a>
-
-        <h1 style="color: orange; background-color: bisque; text-align: center;">Contact</h1>
-        <p style="text-align: center;">950 Main St, <br> Worcester, MA 01610</p>
-        <p style="text-align: center;">Send institutional email: mmuozmiranda@clarku.edu</p>
-        <p style="text-align: center;">Send personal email: m0n73m@gmail.com</p> 
+        <div>
+            <footer style="background-color: bisque;">
+                <h1 style="color: orange; text-align: center;">Contact</h1>
+                <p style="text-align: center;">950 Main St, <br> Worcester, MA 01610</p>
+                <p> Monica Muñoz - Institutional</p>
+                <p><a href="mailto: mmuozmiranda@clarku.edu">mmuozmiranda@clarku.edu</a></p>
+                <p> Monica Muñoz - Personal</p>
+                <p><a href="mailto:m0n73m@gmail.com">m0n73m@gmail.com</a></p>
+            </footer>
+        </div>
         <!--[if lt IE 7]> 
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
