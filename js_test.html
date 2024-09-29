@@ -5,6 +5,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+
+        <style>
+            .highlight_e {
+            background-color: yellow; /* Change to your desired background color */
+        }
+        </style>
+
+        <style>
+            h1{font-size: 150px;}
+
+            .nav_bar_header1, .nav_bar_header2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 1; /* Initially hidden */
+            transition: opacity 1s ease-in-out; /* Smooth fade */
+        }
+
+            .show {
+            opacity: 1; /* Make visible when the .show class is added */
+        }
+        </style>
     </head>
     <body>
         <h1>
@@ -19,8 +42,66 @@
 
         <script src="js_test2.js"></script>
 
+        <button class='change_bk' style="height: 100px; width: 250px;">Click here to highlight my past experience</button>
+        <div id='change_color'>
+            <h2>This is intro</h2>
+            <p>Hi, welcome to my <a href="">personal website</a></p>
+        </div>
 
+        <script>
+            const changebutton = document.querySelector(".change_bk");
+            const past_experience =  document.querySelectorAll("#change_color p a");
 
+            let back_g = true;
+
+            changebutton.onclick = function(){
+                past_experience.forEach(link => {
+                    if (back_g){
+                        link.classList.add("highlight_e");
+                    } else{
+                        link.classList.remove("highlight_e");
+                    }
+                })
+                back_g = !back_g;
+                }
+        </script>
+```
+        <div class="nav_bar_header1"><h1>Hello</h1></div>
+        <div class="nav_bar_header2"><h1>I'm a Geospatial Scientist</h1></div>
+
+        <script>
+            window.onload = function() {
+    // Get headers
+    const header1 = document.querySelector(".nav_bar_header1");
+    const header2 = document.querySelector(".nav_bar_header2");
+
+    let isHeader1Visible = true; // Start with header1 visible
+
+    // Function to toggle between headers
+    function toggleHeaders() {
+        if (isHeader1Visible) {
+            // Show header1, hide header2
+            header1.classList.add("show");
+            header2.classList.remove("show");
+        } else {
+            // Show header2, hide header1
+            header2.classList.add("show");
+            header1.classList.remove("show");
+        }
+
+        // Switch to the other header for the next cycle
+        isHeader1Visible = !isHeader1Visible;
+
+        // Repeat the toggle every 4 seconds
+        setTimeout(toggleHeaders, 4000);
+    }
+
+    // Start the toggle cycle
+    toggleHeaders();
+};
+        </script>
+
+       
 
     </body>
     </html>

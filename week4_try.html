@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .myPop{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    border: solid;
+    }
+
+    .close{
+        position: absolute;
+        top: 5rem;
+        right: 10rem;
+        color: #0d27d0;
+        font-size: 10rem;
+        font-weight: bold;
+    }
+
+    .close:hover,.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    </style>
+
+
+</head>
+<body>
+<div class="nav_bar_header1"><h1>Hello</h1></div>
+<div class="nav_bar_header2"><h1>I'm a Geospatial Scientist</h1></div>
+ <script>
+ window.onload = function() {
+    // Get headers
+    const header1 = document.querySelector(".nav_bar_header1");
+    const header2 = document.querySelector(".nav_bar_header2");
+
+    let isHeader1Visible = true; // Start with header1 visible
+
+    // Function to toggle between headers
+    function toggleHeaders() {
+        if (isHeader1Visible) {
+            // Show header1, hide header2
+            header1.classList.add("show");
+            header2.classList.remove("show");
+        } else {
+            // Show header2, hide header1
+            header2.classList.add("show");
+            header1.classList.remove("show");
+        }
+
+        // Switch to the other header for the next cycle
+        isHeader1Visible = !isHeader1Visible;
+
+        // Repeat the toggle every 4 seconds
+        setTimeout(toggleHeaders, 4000);
+    }
+     // Start the toggle cycle
+     toggleHeaders();
+};
+</script>
+
+<div class="gallery-item">
+    <img src="images\moni.jpg" 
+    alt="This is me" class="gallery-img" width="400px" height="480px">
+    <figcaption style="font-size: 50px;">Me</figcaption>
+</div>
+
+<div  class="myPop">
+    <span class="close">&times;</span>
+    <img id="img_pop" style="margin-top: 10rem;">
+    <h1 id = "h1_pop"></h1>
+</div>
+
+<script>
+    // Get the image and insert it inside the modal
+    const images = document.getElementsByClassName("gallery-img");
+    const captionText = document.getElementById("caption");
+    
+    const pop_w = document.getElementsByClassName("myPop")[0];
+    const pop_Img = document.getElementById("img_pop");
+    const pop_h1 = document.getElementById("h1_pop")
+
+    // Loop through all gallery images
+    for (let i = 0; i < images.length; i++) {
+        images[i].onclick = function() {
+            pop_w.style.display = "block";
+            pop_Img.src = this.src;
+            pop_h1.innerHTML = this.alt
+        }
+    }
+</script>
+
+
+</body>
+</html>
