@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -21,10 +17,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
         <style>
-             header {
-                background-color: aliceblue;
-             }
-
 
              .myPop{
             display: none;
@@ -55,6 +47,17 @@
             cursor: pointer;
             }
 
+            .content-container {
+            margin: 0 auto; /* Centers the content horizontally */
+            padding: 20px; /* Adds space inside the container */
+            max-width: 1400px; /* Limits the width of the container */
+            background-color: #f9f9f9; /* Optional: Adds a light background for contrast */
+            border: 1px solid #ddd; /* Optional: Adds a subtle border */
+            border-radius: 10px; /* Optional: Rounds the corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow */
+            }
+
+            
         </style>
     </head>
 
@@ -69,7 +72,7 @@
                     <li><a href="#Home" class="active">Home</a></li>
                     <li><a href="#Edu">Education</a></li>
                     <li><a href="#Int">Interests</a></li>
-                    <li><a href="#Look">Portfolio</a></li>
+                    <li><a href="#Online">Online projects</a></li>
                     <li><a href="#Contact">Contact me</a></li>
                 </ul>
                 </nav>
@@ -82,8 +85,8 @@
                 <div class="home-text">
                     <span style="color: white;">Environmental Engineer</span>
                     <h1>Monica Muñoz Miranda</h1>
-                    <p>Hello! My name is Monica, I'm from Mexico, currently living in Worcester completing my masters studies in GIS. 
-                        I hope to contribute to conservation projects for natural resoruces and biodiversity protection.</p>
+                    <p style="color: rgb(135, 175, 248)"><strong>My name is Monica, I'm from Mexico, currently living in Worcester completing my masters studies in GIS. 
+                        I hope to contribute to conservation projects for natural resoruces and biodiversity protection.</strong> </p>
                     <div class="main-btn">
                         <a href="#Contact" class="btn">Contact me</a>
                     </div>
@@ -137,32 +140,98 @@
               <script src="js/script.js"></script>
         </div>
 
+        <div class="content-container">
         <div>
-            <h2 style="background-color: rgb(190, 218, 243); color: rgb(135, 175, 248);" id="Edu"> Education </h2>
-            <p><br> <img src="images\uag.png"style="float:right;width: 75px;height:75px;" class="right"> I completed my undergraduate studies in my home country Mexico at the
-                 Universidad Autonoma de Guadalajara in Environmental Engenineering<br>Sep 2021</p><br><br>
-            <p> <img src="images\clark.jpg"style="float:right;width: 75px;height:75px;"> I am currently a GIS masters student at Clark University. <br> 
+            <br><br>
+            <h2 style="background-color: rgb(190, 218, 243); color: rgb(135, 175, 248); text-align: center;" id="Edu">Education</h2>
+            <p><br> <img src="images\uag.png"style="float:right;width: 75px;height:75px;" class="right"> I completed my undergraduate studies in my home country, Mexico, at the
+                 Universidad Autonoma de Guadalajara in <b>Environmental Engenineering</b><br>Sep 2021<br>
+                 - During my studies here I focused mostly on soil and water studies. In this regard, in collaboration with fellow students and faculty members
+                 a study of inorganic tracers in agave as a parameter to ensure the authenticy of the Denomination of Origin of Tequila soil.<br>
+                 <b>Link to the paper:</b><a href="https://doi.org/10.1016/j.indcrop.2022.115401"> Determination of inorganic tracers in agave plants and agricultural soils as an auxiliary parameter to ensure the authenticity of the region that grants the Denomination of Origin of Tequila.</a></p>
+                 <br><br>
+            <p> <img src="images\clark.jpg"style="float:right;width: 75px;height:75px;"> I am currently a <b>GIS masters student</b> at Clark University.
                 This is a private research university in Worcester, Massachusetts. <br> Founded in 1887 with a large endowment from its namesake Jonas Gilman Clark, 
-                a prominent businessman, Clark was one of the first modern research universities in the United States. </p><br><br><br>
+                a prominent businessman, Clark was one of the first modern research universities in the United States.<br>
+                I am currently part of a research project looking at water crisis in a central region of Mexico, considering climate justice and making use of geospatial open data.
+            </p>
         </div>
        
         <div>
-            <h2 id="Int" style="color: rgb(135, 175, 248); background-color: rgb(190,218,243);"> Interests </h2>
-            <p><br> During my undergraduate studies I was part of a soil quality project research project for Tequila quality and have helped mapping new species observation 
-                in Jalisco, Mexico. <br><br> I am very interested in water quality and management as well. For now, I'd like to be part of project for conservation and/or 
-                restoration of natural resources and biodiversity. </p>
-            <p> Outside my academic interests I am a very big fan of sports and horse riding in particular. I've been riding my whole life and horse training is 
-                now a big part of my life. </p><br><br><br>
+            <br><br>
+            <h2 id="Int" style="color: rgb(135, 175, 248); background-color: rgb(190,218,243); text-align: center;"> Interests </h2>
+            <p><br> I have a strong interest in water quality and its sustainable management, as I believe it plays a crucial role in maintaining healthy ecosystems and 
+                supporting communities. At this point, I'm especially eager to be involved in projects that focus on the conservation and restoration of natural 
+                resources and biodiversity. Contributing to efforts that protect and revive ecosystems, while also promoting balance between human needs and nature, 
+                is something I'm very passionate about. </p><br>
+            <p> Outside of my academic and research pursuits, I am deeply passionate about sports, with a particular love for horse riding. Having ridden for as
+                long as I can remember, horse training has become a central and fulfilling part of my life. I genuinely believe that working with horses offers great 
+                opportunities to build character, fostering qualities such as patience, empathy, and determination. 
+                It's an activity that not only strengthens the bond between rider and horse but also nurtures personal growth in profound ways. </p><br><br><br>
         </div>
-       
-        <div class = Hyperlink> 
-            <h2 id="Look" style="color: rgb(135, 175, 248); background-color: rgb(190, 218, 243);">Portfolio</h2>
-            <p><br>This image will take you to my portfolio, feel free to check that out</p><br>
-           <figure>
-            <a href="https://m0n73m.wixsite.com/my-site"><img src="images\portfolio.png" alt="portfolio"></a>
-            <figcaption style="text-align: center; font-size: 12px;">Coverpage of my portfolio website</figcaption>
-           </figure>
-        </div>
+
+        <div>
+            <br><br>
+            <h2 id="Online" style="color: rgb(135, 175, 248); background-color: rgb(190,218,243); text-align: center;"> Online projects </h2>
+            <p><br> I've been developing a range of skills to enhance GIS applications by combining programming, web development, 
+                and data visualization. My learning has focused on tools like Python, JavaScript, and R to build interactive and 
+                data-driven solutions. I've worked on creating personal websites with HTML and CSS, integrating JavaScript to 
+                add dynamic functionality. Additionally, I've explored geospatial tools like Leafmap, geemap, and the ArcGIS 
+                JavaScript API to visualize spatial data effectively. Using frameworks like Shiny in R and Plotly, I've gained 
+                experience in building interactive dashboards and visualizations that communicate data insights. These skills 
+                have allowed me to connect programming and GIS technologies for mapping and spatial analysis. <br><br>
+                Here are some online map examples: <br><br></p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 10px;">
+                <figure>
+                <a href="https://moni-3m.github.io/leafletRMap/" target="_blank">
+                    <img src="images/leaf.png" alt="Map 1" style="width: 350px; height: 350px; object-fit: cover; border: 1px solid #ccc;">
+                    <figcaption style="text-align: center; color:rgb(135, 175, 248);"><strong>DSGA leafletRMap</strong></figcaption>
+                    <div class="git_online">
+                        <a href="https://github.com/moni-3m/leafletRMap.git"><i style="color: white; size: 8px;"><strong>GitHub</strong></i></a>
+                    </div>
+                </a></figure>
+                <figure>
+                <a href="https://moni-3m.github.io/Lab05_WM/" target="_blank">
+                    <img src="images/lab05.png" alt="Map 2" style="width: 350px; height: 350px; object-fit: cover; border: 1px solid #ccc;">
+                    <figcaption style="text-align: center; color:rgb(135, 175, 248);"><strong>Coast classification status</strong></figcaption>
+                    <div class="git_online">
+                        <a href="https://github.com/moni-3m/Lab05_WM.git"><i style="color: white; size: 8px;"><strong>GitHub</strong></i></a>
+                    </div>
+                </a></figure>
+                <figure>
+                <a href="https://moni-3m.github.io/Lab07_WM/" target="_blank">
+                    <img src="images/lab07.png" alt="Map 3" style="width: 350px; height: 350px; object-fit: cover; border: 1px solid #ccc;">
+                    <figcaption style="text-align: center; color:rgb(135, 175, 248);"><strong>NLCD Canopy</strong></figcaption>
+                    <div class="git_online">
+                        <a href="https://github.com/moni-3m/Lab07_WM.git"><i style="color: white; size: 8px;"><strong>GitHub</strong></i></a>
+                    </div>
+                </a></figure>
+                <figure>
+                <a href="https://moni-3m.github.io/Lab06_WM/" target="_blank">
+                    <img src="images/lab06.png" alt="Map 4" style="width: 350px; height: 350px; object-fit: cover; border: 1px solid #ccc;">
+                    <figcaption style="text-align: center; color:rgb(135, 175, 248);"><strong>Housing Mortage by State</strong></figcaption>
+                    <div class="git_online">
+                        <a href="https://github.com/moni-3m/Lab06_WM.git"><i style="color: white; size: 8px;"><strong>GitHub</strong></i></a>
+                    </div>
+                </a></figure>
+                <figure>
+                <a href="https://moni-3m.github.io/Lab09_WM/" target="_blank">
+                    <img src="images/lab09.png" alt="Map 5" style="width: 350px; height: 350px; object-fit: cover; border: 1px solid #ccc;">
+                    <figcaption style="text-align: center; color:rgb(135, 175, 248);"><strong>Solar Panel Map</strong></figcaption>
+                    <div class="git_online">
+                        <a href="https://github.com/moni-3m/Lab09_WM.git"><i style="color: white; size: 8px;"><strong>GitHub</strong></i></a>
+                    </div>
+                </a></figure>
+                <figure>
+                <a href="https://moni-3m.github.io/terrain_WM/" target="_blank">
+                    <img src="images/3d.png" alt="Map 7" style="width: 350px; height: 350px; object-fit: cover; border: 1px solid #ccc;">
+                    <figcaption style="text-align: center; color:rgb(135, 175, 248);"><strong>Terrain project</strong></figcaption>
+                    <div class="git_online">
+                        <a href="https://github.com/moni-3m/terrain_WM.git"><i style="color: white; size: 8px;"><strong>GitHub</strong></i></a>
+                    </div>
+                </a></figure>
+            </div>
+            </div>
 
         <div id="buttonContainer"> 
             <button id ="backtoTop">Back To Top</button> 
@@ -228,9 +297,11 @@
 
 
         </div>
+    </div>
         <!--[if lt IE 7]> 
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+    <script src="hidden.js"></script>
+
     </body>
 </html> 
